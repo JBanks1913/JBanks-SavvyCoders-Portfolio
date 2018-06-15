@@ -1,0 +1,23 @@
+{
+  "name": "JasmineBanks",
+  "version": "1.0.0",
+  "description": "Hi, my name is Jasmine. Born and raised in St. Louis. Graduated from Northwest Missouri State University last Spring with my BFA in Art, concentration in Graphic Design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBanks1913/JBanks-SavvyCoders-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBanks1913/JBanks-SavvyCoders-Portfolio/issues"
+  },
+  "homepage": "https://github.com/JBanks1913/JBanks-SavvyCoders-Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
