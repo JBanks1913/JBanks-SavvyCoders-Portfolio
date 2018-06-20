@@ -1,3 +1,4 @@
+
 .mellowyellow {
 
     color:#eeaf00;
@@ -5,4 +6,78 @@
 
 h3 {
     background-color: #eeaf00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#navigation {
+    position: fixed;
+    padding: 10px;
+    background-color: #f25944;
+    width: 100vw;
+}
+
+#navigation > ul {
+margin: 0px;
+padding: 10px;    
+list-style: none;
+}
+
+#navigation li {
+    margin: 0 10px 0 0;
+    display: inline;
+}
+
+#navigation .container {
+    margin: 0 auto;
+}
+
+#navigation > ul > li {
+    margin-right: 10px;
+    display: inline;
+}
+
+
+#header { 
+    padding: 20px;
+    background-color: #243752;
+}
+
+
+#footer {
+    padding: 10px;
+    background-color: #f25944;
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer > ul {
+margin: 0px;
+padding: 20px;    
+list-style: none;
+}
+
+#footer > ul > li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
 }
