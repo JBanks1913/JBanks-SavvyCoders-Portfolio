@@ -8,6 +8,9 @@ a:link {
     color: ff8b94;
 }
 
+a {
+    text-decoration: none;
+}
 
 h3 {
     background-color: #dcedc1;
@@ -15,7 +18,15 @@ h3 {
 }
 
 body {
-    margin: 0px;
+    background-color: #dcedc1;
+    min-height: 100vh;  /* can delete this later, add to blog page */
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    grid-template-areas:
+        "navigation"
+        "header"
+        "content"
+        "footer"  
 }
 
 img {
@@ -23,32 +34,50 @@ img {
     max-width: 500px;
 }
 
+.fa-github-square {
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+.fa-linkedin {
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+.fa-palette {
+    color: #ffffff;
+    font-size: 15pt;
+}
+
 #navigation {
-    position: fixed;
     padding: 10px;
     background-color: #ffd3b6;
-    width: 100vw;
     font-family: 'Quicksand', sans-serif;
+    position: sticky;
+    top: 0;
 }
 
 #navigation > ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+list-style: none;
 margin: 0px;
 padding: 10px;    
-list-style: none;
 }
 
 #navigation > ul > li {
     margin-right: 0 10px 0 0;
-    display: inline;
 }
 
 #navigation .container {
     margin: 0 auto;
 }
 
-#navigation ul li {
+#navigation li {
     position: relative;
 }
+
 
 #navigation a + ul {
     background-color: #ffaaa5;
@@ -61,6 +90,8 @@ list-style: none;
 #navigation a:hover + ul,
 #navigation a + ul:hover {
     display: block;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #content p + ul {
@@ -82,10 +113,12 @@ list-style: none;
 
 h1 {
     font-family: 'Libre Baskerville', serif;
+    color: #ffaaa5;
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
+    padding: 20px;
 }
 
 #footer > ul {
@@ -100,11 +133,32 @@ list-style: none;
 }
 
 .container {
-    width: 100%;
     max-width: 760px;
     margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
 }
 
 ul {
     font-family: 'Quicksand', sans-serif;
 }
+
+@media (min-width: 612px) {
+    body {
+    grid-template-columns: 150px auto;
+    grid-auto-rows: min-content auto min-content;
+    grid-template-areas:
+        "navigation header"
+        "navigation content"
+        "navigation footer";
+    }
+
+  #navigation {
+    grid-area: navigation;
+  }
+
+  #navigation > ul {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+
