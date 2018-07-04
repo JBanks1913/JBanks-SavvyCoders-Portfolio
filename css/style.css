@@ -5,7 +5,7 @@
 }
 
 a:link {
-    color: ff8b94;
+    color: #ff8b94;
 }
 
 a {
@@ -15,6 +15,11 @@ a {
 h3 {
     background-color: #dcedc1;
     font-family: 'Quicksand', sans-serif;
+}
+
+#greeting {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffaaa5;
 }
 
 body {
