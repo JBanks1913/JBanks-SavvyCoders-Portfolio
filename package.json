@@ -19,5 +19,9 @@
   "homepage": "https://github.com/JBanks1913/JBanks-SavvyCoders-Portfolio#readme",
   "devDependencies": {
     "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "navigo": "^7.1.2"
   }
 }

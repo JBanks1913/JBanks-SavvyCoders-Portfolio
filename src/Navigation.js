@@ -1,24 +1,49 @@
 
-export default `
+// function buildLinks(links){
+//     var i = 0;
+//     var result = '';
 
-<div id ="navigation">
-    <ul class="container">
-      <li>
-         <a href="/blog">Blog</a>
-      </li>
-      <li>
-         <a href="/contact">Contact</a>
-      </li>
-      <li>
-         <a href="/Projects/">Projects</a>
-    <ul>
-      <li>First</li>
-      <li>Second</li>
-      <li>Third</li>
-    </ul>
-      </li>
-    </ul>
-</div>
+//     while(i < links.length){
+//         result += `
+//         <li>
+//         <a href="/${links[i]}">
+//         ${links[i]}
+//          </a>
+//         </li>`;
 
-`;
+//         i++;
+//     }
 
+//     return result;
+// }
+
+import { lowerCase } from 'lodash';
+
+console.log(lowerCase);
+
+function buildLinks(links){
+    var result = '';
+    var i = 0;
+
+    while(i < links.length){
+        result += `
+        <li>
+          <a href="/${lowerCase(links[i])}">${links[i]}</a>  
+        </li>
+      `;
+
+        i++;
+    }
+
+    return result;
+}
+
+export default function Navigation(state){
+    return `
+      <div id="navigation">
+        <ul class="container">
+         ${buildLinks(state.links)}
+        </ul>
+      </div>
+     `;
+}
