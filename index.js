@@ -3,26 +3,21 @@ import Header from './src/Header';
 import Footer from './src/Footer';
 import Navigation from './src/Navigation';
 import * as State from './store';
-import Navigo from 'navigo';
+import Navigo from 'Navigo';
+import { capitalize } from 'lodash';
 
 var root = document.querySelector('#root');
-var router = new Navigo();
-
-console.log(router);
+var router = new Navigo(location.origin);
 
 function render(state){
     var greeting;
     var input;
-    var links;
-    var i = 0;
-
-    console.log('page state', state);
 
     root.innerHTML = `
         ${Navigation(state)}
         ${Header(state)}
-        ${Content}
-        ${Footer}
+        ${Content(state)}
+        ${Footer(state)}
     `;
 
     greeting = document.querySelector('#greeting');
@@ -38,22 +33,18 @@ function render(state){
     `
     );
 
-    links = document.querySelectorAll('#navigation a');
-
-    while(i < links.length){
-        links[i].addEventListener(
-            'click',
-            (event) => {
-                var page = event.target.textContent;
-            
-                event.preventDefault();
-                render(State[page]);
-            }
-        );
-
-        i++;
-    }
+    router.updatePageLinks();
 }
 
-// greetUser();
-render(State['Home']);
+
+function handleRoute(params){
+    var page = capitalize(params.page);
+
+    render(State[page]);
+}
+
+router
+    .on('/:page', handleRoute)
+    .on('/', () => handleRoute({ 'page': 'home' }))
+    .resolve();
+

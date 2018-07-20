@@ -24,14 +24,21 @@ console.log(lowerCase);
 function buildLinks(links){
     var result = '';
     var i = 0;
+    var href = '/';
 
     while(i < links.length){
+        if(links[i] !== 'Home'){
+            href += lowerCase(links[i]);
+        }
+
         result += `
         <li>
-          <a href="/${lowerCase(links[i])}">${links[i]}</a>  
+          <a href="${href}" data-navigo>${links[i]}</a>
         </li>
       `;
-
+    
+        href = '/';
+        
         i++;
     }
 
