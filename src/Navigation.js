@@ -3,16 +3,15 @@ console.log(lowerCase);
 
 function reduceLinktoHTML(links, link){
     var href = '/';
-    var i = 0;
 
     if(link !== 'Home'){
-        href += lowerCase(links[i]);
+        href += lowerCase(link);
     }
 
     return `
         ${links}
         <li>
-          <a href="${href}" data-navigo>${links}</a>
+          <a href="${href}" data-navigo>${link}</a>
         </li>
       `;
 }

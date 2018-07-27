@@ -4,6 +4,7 @@
   "description": "Hi, my name is Jasmine. Born and raised in St. Louis. Graduated from Northwest Missouri State University last Spring with my BFA in Art, concentration in Graphic Design.",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/JBanks1913/JBanks-SavvyCoders-Portfolio#readme",
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "parcel-bundler": "^1.9.7"
   },
   "dependencies": {
     "axios": "^0.18.0",

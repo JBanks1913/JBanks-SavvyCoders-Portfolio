@@ -14,11 +14,11 @@ a {
 
 h3 {
     background-color: #dcedc1;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #greeting {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Slab', serif;
     color: #ffaaa5;
 }
 
@@ -57,7 +57,7 @@ img {
 #navigation {
     padding: 10px;
     background-color: #ffd3b6;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     position: sticky;
     top: 0;
 }
@@ -112,17 +112,17 @@ padding: 10px;
 #footer {
     padding: 10px;
     background-color: #ffd3b6;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
 h1 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Josefin Slab', serif;
     color: #ffaaa5;
 }
 
 p {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 20px;
 }
 
@@ -140,11 +140,11 @@ list-style: none;
 .container {
     max-width: 760px;
     margin: 0 auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 ul {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 @media (min-width: 612px) {

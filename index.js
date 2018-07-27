@@ -10,7 +10,7 @@ import { capitalize } from 'lodash';
 var root = document.querySelector('#root');
 var router = new Navigo(location.origin);
 
-axios('https://jsonplaceholder.typicode.com/posts').then(console.log);
+State.posts + [];
 
 function render(state){
     var greeting;
@@ -19,7 +19,7 @@ function render(state){
     root.innerHTML = `
         ${Navigation(state)}
         ${Header(state)}
-        ${Content(state)}
+        ${Content(state, State.posts)}
         ${Footer(state)}
     `;
 
@@ -51,3 +51,12 @@ router
     .on('/', () => handleRoute({ 'page': 'home' }))
     .resolve();
 
+axios('https://jsonplaceholder.typicode.com/posts').then((response) => {
+    var params = router.lastRouteResolved().params;
+
+    State.posts = response.data;
+
+    if(params){
+        handleRoute(params);
+    }
+});

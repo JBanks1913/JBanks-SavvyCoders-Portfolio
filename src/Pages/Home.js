@@ -1,4 +1,5 @@
-export default `
+export default function Home(){
+    return `
     <p>Hi, my name is Jasmine. Born and raised in St. Louis, MO.
     I graduated from Northwest Missouri State University last Spring (2017) with my BFA in Art, concentration in Graphic Design.</p>
 
@@ -16,4 +17,4 @@ export default `
 
     </ul>
 `;
-
+}
