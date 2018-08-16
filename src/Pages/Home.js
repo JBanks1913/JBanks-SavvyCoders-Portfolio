@@ -1,20 +1,23 @@
 export default function Home(){
     return `
-    <p>Hi, my name is Jasmine. Born and raised in St. Louis, MO.
-    I graduated from Northwest Missouri State University last Spring (2017) with my BFA in Art, concentration in Graphic Design.</p>
+   <body>
+        <h1>Welcome to the Eatery.</h1>
 
-    <ul>Contact Info:
+        <h3>The home of delicious food and recipes, crafted by rising your chefs across the US.<br></br>
+        Ages ranging from 13-25.</h3>
+   
+        <div class="xop-section">
+        <ol class="xop-grid">
+            <li>   
+                <div class="xop-image-5">
+                </div>
+            </li>
+        </ol>
+    </div>
 
-        <li>
-         <a href="https://www.linkedin.com/in/jasmineabanks/">LinkedIn</a>
-        </li>
-        <li>
-         <a href="https://github.com/JBanks1913">GitHub</a>
-        </li>
-        <li>
-         <a href="https://www.jasmineabanks.com/">Design Website</a>
-        </li>
 
-    </ul>
+
+   </body>
+   
 `;
 }

@@ -23,8 +23,8 @@ function render(state){
         ${Footer(state)}
     `;
 
-    greeting = document.querySelector('#greeting');
-    input = document.querySelector('#header input');
+    // greeting = document.querySelector('#greeting');
+    // input = document.querySelector('#header input');
 
     input.addEventListener(
         'keyup',

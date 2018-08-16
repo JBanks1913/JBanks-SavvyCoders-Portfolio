@@ -1,5 +1,9 @@
-export default function Blog(posts){
-    return posts
-        .map((post) => `<h2>${post.title}</h2><p>${post.body}</p>`)
-        .join('');
+export default function Blog(){
+    return `
+    
+    <h3>
+        New content added bi-weekly. Send your post requests via the "Contact" page.
+    </h3>
+
+`;
 }

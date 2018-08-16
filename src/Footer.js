@@ -17,10 +17,7 @@ export default function Footer(){
                 <a href="https://www.jasmineabanks.com/">
                 <i class="fas fa-palette"></i></a>
             </li>
-
-
         </ul>
-
 
         </div>
         `;
